@@ -1,23 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
-
+import usePrevious from './hooks/usePrevious';
 function App() {
+ const [age, setAge] = useState(21);
+ const previousAge = usePrevious(age);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Current Age : {age}</h2>
+        <h2>Previous Age : {previousAge}</h2>
+        <button onClick={()=>setAge(age - 1)}>Make Me Younger</button>
+
       </header>
     </div>
   );
