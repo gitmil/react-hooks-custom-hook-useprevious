@@ -1,11 +1,11 @@
 
 Clone the project
 
-## `git clone https://github.com/gitmil/react-hooks-useprevious.git`
+## `git clone https://github.com/gitmil/react-custom-hooks-useprevious.git`
 
 change to the project directory
 
-## `cd react-hooks-useprevious`
+## `cd react-custom-hooks-useprevious`
 
 Install Dependencies:
 
