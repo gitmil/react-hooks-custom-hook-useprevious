@@ -1,5 +1,5 @@
 
-Clone the project
+Clone the project now
 
 ## `git clone https://github.com/gitmil/react-hooks-custom-hook-useprevious.git`
 
